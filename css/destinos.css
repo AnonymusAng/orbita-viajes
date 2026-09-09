@@ -11,11 +11,6 @@ section {
 
     /* espacio alrededor de las tarjetas */
     padding: 20px;
-
-    /*  */
-
-    /* creamos las tarjetas de destinos */
-
 }
 
 article {
@@ -32,6 +27,8 @@ article {
     flex-direction: column;
     /* centra los elementos horizontalmente */
     align-items: center;
+    /* Agrega una sombra para darle profundidad */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 /* vamos a crear un estilo a las imagenes   */
 article img {
@@ -46,10 +43,13 @@ article img {
     /* agrega un margen inferior a la imagen */
     margin-bottom: 15px;
 }    
-/* creamos un afecto al pasar el mouse por encima */
+/* creamos un afecto al pasar el mouse por encima de las tarjetas*/
 article:hover {
     /* cambia el color de fondo */
-    background-color: #aae3e3;
+    background-color: #cbf9f9;
+    /* le da animacion ligeramente la tarjeta */
+    transform: scale(1.02);
     /* agrega una sombra */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
+/*  */
