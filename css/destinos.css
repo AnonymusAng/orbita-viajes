@@ -1,0 +1,55 @@
+/* section contiene las 4 tarejtass!!!  */
+section {
+    /* grip organiza las tarjetas */
+    display: grid; 
+
+    /* crea una cuadrícula con 2 columnas de igual tamaño */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* espacio entre las columnas */
+    gap: 25px;
+
+    /* espacio alrededor de las tarjetas */
+    padding: 20px;
+
+    /*  */
+
+    /* creamos las tarjetas de destinos */
+
+}
+
+article {
+    /* color de fondo */
+    background-color: #f5f5f5;
+    /* espacio de la tarjeta */
+    padding: 20px;  
+    /* redondea las esquinas */
+    border-radius: 15px;
+    /* agrega el borde */
+    border: 1px solid #ddd;
+    /* organiza el contenido interno en columnas y coloca los elementos debajo de otro */
+    display: flex;
+    flex-direction: column;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+}
+/* vamos a crear un estilo a las imagenes   */
+article img {
+    /* ancho de la imagen */
+    width: -200%;
+    /* altura de la imagen */
+    max-height: 300px;
+    /* redondea las esquinas de la imagen */
+     border-radius: 10px;
+    /* evita que la imagen se deforme  */
+    object-fit: cover;
+    /* agrega un margen inferior a la imagen */
+    margin-bottom: 15px;
+}    
+/* creamos un afecto al pasar el mouse por encima */
+article:hover {
+    /* cambia el color de fondo */
+    background-color: #aae3e3;
+    /* agrega una sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
