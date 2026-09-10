@@ -1,75 +1,151 @@
-
-body{
-    font-family: Arial, sans-serif;
-    color: #000000;
-}
-header { /*ENCABEZADO!!!*/
-    /* Fondo del encabezado */
-    background: linear-gradient(135deg, #66d2f0, #6e9cff);
-
-    /* Color de las letras */
-    color: rgb(0, 0, 0);
-
-    /* Espacio interno */
-    padding: 20px 10px;
-
-    /* Colocamos logo/título y menú en fila */
-    display: flex;
-
-    /* Separa el título del menú */
-    justify-content: space-between;
-
-    /* Centra verticalmente */
-    align-items: center;
-
-    /* Sombra debajo del encabezado */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+/* Configuración general de la página */
+{
+    box-sizing: border-box;
 }
 
-header h1 { 
-    /* Quitamos el margen que trae por defecto */
+body {
     margin: 0;
-
-    /* Tamaño del título */
-    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #07152b;
+    color: #f5f7ff;
+    line-height: 1.6;
 }
-nav ul {
-    list-style: none;
 
-    padding: 10px;
-
-    margin: 10px;
-
-    /* Colocamos los enlaces horizontalmente */
-    display: flex;
-
-    /* Espacio entre cada enlace */
-    gap: 45px;
-}
-nav a {
-    /* Quitamos el subrayado */
-    text-decoration: none;
-
-    /* Color blanco */
-    color: rgb(1, 0, 0);
-
-    /* Texto un poco más grueso */
-    font-weight: bold;
-
-    /* Transición suave cuando pasamos el mouse */
-    transition: 0.3s;
-}
-/* Título "Destinos" */
-main h2 {
-    /* Tamaño del título */
-    font-size: 32px;
-
-    /* Color del título */
-    color: #172554;
-
-    /* Centra el título */
+/* Encabezado principal */
+header {
+    background-color: #0d2142;
+    padding: 25px 20px;
     text-align: center;
+    border-bottom: 3px solid #39c6f4;
+}
 
-    /* Espacio debajo */
-    margin-bottom: 35px;
+header h1 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #39c6f4;
+    color: #07152b;
+}
+
+/* Contenido principal */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+main > h2 {
+    color: #70dcff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main > p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Secciones del sitio */
+section {
+    background-color: #10284d;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #254b75;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #70dcff;
+}
+
+/* Enlaces principales con apariencia de botón */
+section a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 18px;
+    background-color: #39c6f4;
+    color: #07152b;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+section a:hover {
+    background-color: #ffffff;
+}
+
+/* Estilo general para botones */
+button {
+    padding: 10px 18px;
+    background-color: #39c6f4;
+    color: #07152b;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0d2142;
+    padding: 18px;
+    text-align: center;
+    border-top: 2px solid #39c6f4;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adaptación del menú para celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    main > h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 18px;
+    }
 }

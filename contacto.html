@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Órbita Viajes</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <script src="js/contactos.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Órbita Viajes</h1>
+
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="cotizador.html">Cotizador</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contáctanos</h2>
+
+            <p>
+                Completa el formulario para recibir información sobre
+                nuestros viajes interplanetarios.
+            </p>
+
+            <form id="formulario-contacto">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" required>
+                </div>
+
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+
+                <div>
+                    <label for="destino">Destino de interés:</label>
+
+                    <select id="destino" name="destino" required>
+                        <option value="">Seleccione un destino</option>
+                        <option value="luna">Luna</option>
+                        <option value="marte">Marte</option>
+                        <option value="europa">Europa</option>
+                        <option value="nova">Planeta Nova</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="condiciones"
+                        name="condiciones"
+                        required
+                    >
+
+                    <label for="condiciones">
+                        Acepto las condiciones de contacto.
+                    </label>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+
+                <p id="mensaje-formulario"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto desarrollado por Daniela, Juan y Joan.</p>
+    </footer>
+</body>
+</html>
