@@ -8,9 +8,9 @@ El proyecto fue desarrollado como trabajo colaborativo aplicando **HTML5, CSS, J
 
 ## Integrantes
 
-- Daniela
-- Juan
-- Joan
+- Daniela Medina Pizarro
+- Juan Sebastian Flores
+- Joan Alberto Erazo Zuñiga
 
 ## Repositorio
 
