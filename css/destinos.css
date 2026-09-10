@@ -46,7 +46,7 @@ article img {
 /* creamos un afecto al pasar el mouse por encima de las tarjetas*/
 article:hover {
     /* cambia el color de fondo */
-    background-color: #cbf9f9;
+    background: linear-gradient(135deg, #b0e7f7, #aec6fb);
     /* le da animacion ligeramente la tarjeta */
     transform: scale(1.02);
     /* agrega una sombra */
