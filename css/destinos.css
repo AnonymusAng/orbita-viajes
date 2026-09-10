@@ -67,4 +67,11 @@ article button {
     margin-top: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
+/* Mantiene visible el texto al tocar el botón */
+article button:hover,
+article button:focus {
+    background-color: #0056b3;
+        color: white;
+            transform: scale(1.03);
+            }
 /*  */
