@@ -1,1 +1,117 @@
-Hello Daniela
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador - Órbita Viajes</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cotizador.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Órbita Viajes</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="cotizador.html">Cotizador</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Cotizador de viajes</h2>
+            <p>Calcula el precio de tu viaje interplanetario.</p>
+        </section>
+
+        <section>
+            <h2>Comparación de destinos</h2>
+
+            <table>
+                <caption>Precios de los destinos</caption>
+
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Duración</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Luna</td>
+                        <td>3 días</td>
+                        <td>$2.500.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Marte</td>
+                        <td>15 días</td>
+                        <td>$8.000.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Europa</td>
+                        <td>20 días</td>
+                        <td>$12.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Personaliza tu viaje</h2>
+
+            <form id="cotizador-form">
+
+                <label for="destino">Destino:</label>
+                <select id="destino">
+                    <option value="luna">Luna</option>
+                    <option value="marte">Marte</option>
+                    <option value="europa">Europa</option>
+                </select>
+
+                <label for="viajeros">Cantidad de viajeros:</label>
+                <input type="number" id="viajeros" min="1" value="1">
+
+                <label for="alojamiento">Alojamiento:</label>
+                <select id="alojamiento">
+                    <option value="0">Sin alojamiento</option>
+                    <option value="500000">Alojamiento básico</option>
+                    <option value="1000000">Alojamiento premium</option>
+                </select>
+
+                <label for="servicio">Servicio adicional:</label>
+                <select id="servicio">
+                    <option value="0">Ninguno</option>
+                    <option value="300000">Seguro espacial</option>
+                    <option value="700000">Guía interplanetario</option>
+                </select>
+
+                <button type="submit">Calcular precio</button>
+
+            </form>
+
+            <div id="resultado">
+                <h3>Resultado</h3>
+                <p id="total">$0</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Órbita Viajes</p>
+    </footer>
+
+    <script src="js/cotizador.js"></script>
+
+</body>
+</html>
