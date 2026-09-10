@@ -1,0 +1,77 @@
+/* Contenedor del formulario */
+form {
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #142f57;
+    border: 1px solid #39c6f4;
+    border-radius: 10px;
+}
+
+/* Separación entre los campos */
+form div {
+    margin-bottom: 18px;
+}
+
+/* Etiquetas del formulario */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Campos de texto y listas */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #07152b;
+    background-color: #ffffff;
+    border: 2px solid #9fc9e8;
+    border-radius: 6px;
+}
+
+/* Efecto cuando el usuario selecciona un campo */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #39c6f4;
+    outline: 2px solid #39c6f4;
+}
+
+/* El mensaje puede cambiar de tamaño verticalmente */
+textarea {
+    resize: vertical;
+}
+
+/* Organización de la aceptación de condiciones */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+}
+
+/* Botón para enviar el formulario */
+form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Espacio para los mensajes de validación */
+#mensaje-formulario {
+    margin-top: 18px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
