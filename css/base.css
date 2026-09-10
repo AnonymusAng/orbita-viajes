@@ -1,5 +1,5 @@
 /* Configuración general de la página */
-{
+* {
     box-sizing: border-box;
 }
 
@@ -12,17 +12,58 @@ body {
 }
 
 /* Encabezado principal */
+/* Encabezado principal */
 header {
+    /* Fondo azul oscuro del encabezado */
     background-color: #0d2142;
-    padding: 25px 20px;
-    text-align: center;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    /* Colocamos los elementos en fila */
+    display: flex;
+
+    /* Centramos verticalmente el logo y el título */
+    align-items: center;
+
+    /* Centramos todo el contenido */
+    justify-content: center;
+
+    /* Espacio entre el logo y el título */
+    gap: 20px;
+
+    /* Línea inferior del encabezado */
     border-bottom: 3px solid #39c6f4;
+
+    /* Permitimos que los elementos se acomoden */
+    flex-wrap: wrap;
 }
 
+/* Título principal */
 header h1 {
-    margin: 0 0 15px;
+    /* Quitamos el margen inferior anterior */
+    margin: 0;
+
+    /* Color blanco */
     color: #ffffff;
+
+    /* Tamaño del título */
     font-size: 2.2rem;
+}
+
+/* Logo de Órbita Viajes */
+header img {
+    /* Ancho del logo */
+    width: 100px;
+
+    /* Alto del logo */
+    height: 70px;
+
+    /* Evita que la imagen se deforme */
+    object-fit: cover;
+
+    /* Redondea las esquinas */
+    border-radius: 10px;
 }
 
 /* Menú de navegación */
@@ -53,13 +94,13 @@ main {
     margin: 35px auto;
 }
 
-main > h2 {
+main>h2 {
     color: #70dcff;
     text-align: center;
     font-size: 2rem;
 }
 
-main > p {
+main>p {
     text-align: center;
     font-size: 1.1rem;
 }
@@ -71,6 +112,16 @@ section {
     padding: 25px;
     border-radius: 10px;
     border: 1px solid #254b75;
+}
+
+/* Imágenes dentro de las secciones */
+section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 section h2 {
@@ -141,7 +192,7 @@ footer p {
         margin: 20px auto;
     }
 
-    main > h2 {
+    main>h2 {
         font-size: 1.6rem;
     }
 

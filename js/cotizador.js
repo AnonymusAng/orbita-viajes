@@ -1,6 +1,6 @@
 const formulario = document.getElementById("cotizador-form");
 
-formulario.addEventListener("submit", function(event) {
+formulario.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const destino = document.getElementById("destino").value;
