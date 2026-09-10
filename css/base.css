@@ -1,0 +1,75 @@
+
+body{
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+header { /*ENCABEZADO!!!*/
+    /* Fondo del encabezado */
+    background: linear-gradient(135deg, #66d2f0, #6e9cff);
+
+    /* Color de las letras */
+    color: rgb(0, 0, 0);
+
+    /* Espacio interno */
+    padding: 20px 10px;
+
+    /* Colocamos logo/título y menú en fila */
+    display: flex;
+
+    /* Separa el título del menú */
+    justify-content: space-between;
+
+    /* Centra verticalmente */
+    align-items: center;
+
+    /* Sombra debajo del encabezado */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+header h1 { 
+    /* Quitamos el margen que trae por defecto */
+    margin: 0;
+
+    /* Tamaño del título */
+    font-size: 28px;
+}
+nav ul {
+    list-style: none;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    /* Colocamos los enlaces horizontalmente */
+    display: flex;
+
+    /* Espacio entre cada enlace */
+    gap: 45px;
+}
+nav a {
+    /* Quitamos el subrayado */
+    text-decoration: none;
+
+    /* Color blanco */
+    color: rgb(1, 0, 0);
+
+    /* Texto un poco más grueso */
+    font-weight: bold;
+
+    /* Transición suave cuando pasamos el mouse */
+    transition: 0.3s;
+}
+/* Título "Destinos" */
+main h2 {
+    /* Tamaño del título */
+    font-size: 32px;
+
+    /* Color del título */
+    color: #172554;
+
+    /* Centra el título */
+    text-align: center;
+
+    /* Espacio debajo */
+    margin-bottom: 35px;
+}
