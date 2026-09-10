@@ -49,4 +49,6 @@ formulario.addEventListener("submit", function (evento) {
             } else {
                 mensajeFormulario.style.color = "#70ffb1";
             }
-                                                                                                                                                                                    
+        }
+}
+)                                                                                                                                                                       
