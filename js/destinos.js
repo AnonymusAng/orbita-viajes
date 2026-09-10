@@ -5,12 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // vamos a recorrer cada boton encontrado y le agregamos un evento de click 
     botones.forEach(function(boton) {
-            // cuando se haga click en el boton, ejecutamos la siguiente funcion
+        // cuando se haga click en el boton, ejecutamos la siguiente funcion
         boton.addEventListener("click", function() {
-            const articulo = boton.parentElement; // buscamos el article que contiene el boton
-            const detalles = articulo.querySelector(".detalles"); // buscamos el div con la clase "detalles" dentro del article
-            // si el div con la clase "detalles" tiene la clase "mostrar", la removemos, si no, la agregamos
-            detalles.classList.toggle("oculto");  //agregamos la clase oculto de los detlalles
+            // buscamos el article que contiene el boton
+            const articulo = boton.parentElement; 
+            // buscamos el div con la clase "detalles" dentro del article
+            const detalles = articulo.querySelector(".detalles"); 
+            //mostramos o ocultamos los detalles
+            detalles.classList.toggle("oculto"); 
+            
+            // cambiamos el texto del boton dependiendo si los detalles estan visibles o no
+            if(detalles.classList.contains("oculto")) {
+                boton.textContent = "ver detalles"; // cambiamos el texto del boton
+            } else {
+                // si los detalles estan visibles, mostramos ocultar detalles
+                boton.textContent = "ocultar detalles"; 
+            }
         });
     });
 });
